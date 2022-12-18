@@ -2,9 +2,9 @@ require("dotenv").config();
 const cors = require('cors')
 const express = require('express');
 const mongoose = require('mongoose');
-const userRouter = require('./src/routes/user.routes')
-const nutriRouter = require("./src/routes/nutridata.routes")
-const UserData = require("./src/routes/userdata.routes")
+const userRouter = require('./routes/user.routes')
+const nutriRouter = require("./routes/nutridata.routes")
+const UserData = require("./routes/userdata.routes")
 
 const app = express();
 app.use(cors())
