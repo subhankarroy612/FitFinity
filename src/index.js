@@ -16,7 +16,7 @@ app.use("/userdata", UserData)
 app.get('/', (req, res) => res.send('Hey bud API Works!'))
 
 mongoose.connect(process.env.URL).then(() => {
-    app.listen(process.env.PORT, () => {
+    app.listen(process.env.PORT || 3000, () => {
         console.log(`listening on port http://localhost:${process.env.PORT}`);
     })
 })
